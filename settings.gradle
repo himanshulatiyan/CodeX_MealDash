@@ -1,0 +1,2 @@
+rootProject.name = "CodeX"
+include ':app'

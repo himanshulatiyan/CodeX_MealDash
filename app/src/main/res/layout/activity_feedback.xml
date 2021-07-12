@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context=".feedback">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/open_sans_condensed_bold"
+        android:text="Feedback"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/open_sans_condensed_bold"
+        android:text="Give Ratings"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/open_sans_condensed_bold"
+        android:text="Comment"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:background="@drawable/pdbg"
+        android:maxLines="50"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="8sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/subfeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:text="Submit Your Feedback"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
